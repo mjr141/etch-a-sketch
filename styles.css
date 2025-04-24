@@ -1,0 +1,19 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 512px;
+  height: 512px;
+  background-color: #eee;
+}
+
+.square {
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  box-sizing: border-box;
+}
