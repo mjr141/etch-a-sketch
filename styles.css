@@ -5,15 +5,17 @@ body {
   justify-content: center;
 }
 
-.container {
+#container {
   width: 512px;
   height: 512px;
   background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .square {
   width: 32px;
   height: 32px;
-  background-color: black;
+  background-color: #eee;
   box-sizing: border-box;
 }
