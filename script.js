@@ -17,7 +17,13 @@ function createGrid() {
   for (i = 1; i < 256; i++) {
     let newSquare = gridSquare.cloneNode(true);
     container.appendChild(newSquare);
-  }  
+  }
 }
 
 createGrid();
+
+const squares = document.getElementsByClassName("square");
+
+for (i = 0; i < squares.length; i++) {
+  squares[i].addEventListener("mouseover", (e) => e.target.style.backgroundColor = "black");
+}
