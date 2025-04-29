@@ -23,7 +23,6 @@ function createGrid() {
 createGrid();
 
 const squares = document.getElementsByClassName("square");
-
 for (i = 0; i < squares.length; i++) {
   squares[i].addEventListener("mousedown", (e) => {
     e.preventDefault();

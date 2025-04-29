@@ -3,6 +3,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 40px;
 }
 
 #container {
@@ -11,6 +12,19 @@ body {
   background-color: #eee;
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+#left, #right {
+  flex: 1;
+  height: 512px;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
 }
 
 .square {
