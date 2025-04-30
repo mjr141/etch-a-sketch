@@ -26,12 +26,21 @@ const squares = document.getElementsByClassName("square");
 for (i = 0; i < squares.length; i++) {
   squares[i].addEventListener("mousedown", (e) => {
     e.preventDefault();
-    e.target.style.backgroundColor = "black"    
-  });
+    e.target.style.backgroundColor = "black";
+  }
+  );
   squares[i].addEventListener("mouseover", (e) => {
     console.log((e).buttons);
     if(e.buttons === 1) {
-      e.target.style.backgroundColor = "black"
+      e.target.style.backgroundColor = "black";
     } 
-  });
+  }
+  );
 }
+
+let button = document.querySelector("button");
+button.addEventListener("click", function() {
+  let newGridCount = prompt("hello world");
+  alert(newGridCount);
+}
+);
