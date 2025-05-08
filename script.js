@@ -41,8 +41,12 @@ for (i = 0; i < squares.length; i++) {
 let button = document.querySelector("button");
 button.addEventListener("click", function() {
   let newGridCount = prompt("select the number of squares per side for a new grid (default: 16)");
-  newSquareSize = containerWidth/newGridCount;
-  alert(newGridCount);
-  alert(newSquareSize);
+  if (Number.isInteger(+newGridCount) && newGridCount <= 100) {
+    newSquareSize = containerWidth/newGridCount;
+    alert(newGridCount);
+    alert(newSquareSize);
+  } else {
+    alert("not a valid number");
+  }
 }
 );
