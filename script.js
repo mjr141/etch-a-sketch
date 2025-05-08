@@ -1,9 +1,7 @@
 // calculate the height/width of a square based on the container sizing
-/* function getSquareDimensions() {
-  const container = document.getElementById("container")
-  const cssObj = window.getComputedStyle(container);
-}
- */
+/* const container = document.getElementById("container")
+const cssObj = window.getComputedStyle(container);
+cssObj.width // return pixel value in form of a string */
 
 function createGrid() {
   const container = document.getElementById("container");
@@ -40,7 +38,10 @@ for (i = 0; i < squares.length; i++) {
 
 let button = document.querySelector("button");
 button.addEventListener("click", function() {
-  let newGridCount = prompt("hello world");
+  let newGridCount = prompt("select the number of squares per side for a new grid (default: 16)");
+  const containerWidth = 512; // container width in pixels
+  newSquareSize = containerWidth/newGridCount;
   alert(newGridCount);
+  alert(newSquareSize);
 }
 );
