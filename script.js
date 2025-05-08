@@ -41,7 +41,7 @@ createGrid(); // initialize the grid with default values
 
 let button = document.querySelector("button");
 button.addEventListener("click", function() {
-  let newGridCount = prompt("select the number of squares per side for a new grid (default: 16)");
+  let newGridCount = prompt("select the number of squares per side for a new grid (default: 16, maximum: 100)");
   if (newGridCount === "") { // user pressed ok but input nothing
     createGrid()
   } else if (newGridCount === null) {
